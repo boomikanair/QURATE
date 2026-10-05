@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EDEBDD;
+    color: #1B1717;
+    font-family: "Bitcount Grid Double", cursive;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+h1,
+h2 {
+    font-family: "Bitcount Grid Double", cursive;
+    font-weight: normal;
+    margin-top: auto;
+    color: #630000;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    transform: rotate(0deg);
+    text-shadow: 2px 2px 0 #EDEBDD;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    color: #1B1717;
+}
+
+section {
+    background: #630000;
+    color: #EDEBDD;
+    border: 3px solid #1B1717;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+section h2 {
+    color: #EDEBDD;
+}
+
+.section-description {
+    margin-bottom: 18px;
+    color: #EDEBDD;
+}
+
+
+/* =========================
+   UPLOAD SECTION
+========================= */
+
+.upload-section {
+    text-align: center;
+    background: #EDEBDD;
+    color: #1B1717;
+    border: 3px solid #630000;
+    box-shadow: 6px 6px 0 #630000;
+}
+
+.upload-section h2 {
+    color: #630000;
+}
+
+.upload-section p {
+    margin-bottom: 18px;
+    color: #1B1717;
+}
+
+input[type="file"] {
+    font-family: "Bitcount Grid Double", cursive;
+    font-size: 17px;
+    color: #1B1717;
+    margin: 10px;
+    padding: 8px;
+}
+
+input[type="file"]::file-selector-button {
+    font-family: "Bitcount Grid Double", cursive;
+    font-size: 16px;
+    background: #630000;
+    color: #EDEBDD;
+    border: 3px solid #630000;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #1B1717;
+    margin-right: 12px;
+    transition: 0.15s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #810100;
+    color: #EDEBDD;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #1B1717;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    display: block;
+    margin: 15px auto 5px;
+    font-family: "Bitcount Grid Double", cursive;
+    font-size: 18px;
+    background: #810100;
+    color: #EDEBDD;
+    border: 3px solid #630000;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #1B1717;
+    transition: 0.15s ease;
+}
+
+button:hover {
+    background: #630000;
+    color: #EDEBDD;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #1B1717;
+}
+
+button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+
+/* =========================
+   SUBJECT
+========================= */
+
+.subject-section {
+    background: #630000;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+#detectedSubject {
+    font-size: 1.4rem;
+    color: #EDEBDD;
+    background: #810100;
+    border: 2px dashed #EDEBDD;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TOPICS
+========================= */
+
+.analysis-section {
+    background: #630000;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+#topicResults {
+    display: grid;
+    gap: 15px;
+}
+
+.topic-card {
+    background: #EDEBDD;
+    color: #1B1717;
+    border: 2px solid #810100;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.topic-card h3 {
+    font-family: "Bitcount Grid Double", cursive;
+    font-weight: normal;
+    color: #630000;
+    margin-bottom: 8px;
+}
+
+.topic-card p {
+    margin: 5px 0;
+    color: #1B1717;
+}
+
+.priority-high,
+.priority-medium,
+.priority-low {
+    color: #810100;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RECOMMENDATIONS
+========================= */
+
+.recommendations-section {
+    background: #630000;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+#recommendationResults {
+    display: grid;
+    gap: 12px;
+}
+
+.recommendation-card {
+    background: #810100;
+    color: #EDEBDD;
+    border-left: 7px solid #EDEBDD;
+    border-top: 2px solid #EDEBDD;
+    border-right: 2px solid #EDEBDD;
+    border-bottom: 2px solid #EDEBDD;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.recommendation-card h3 {
+    font-family: "Bitcount Grid Double", cursive;
+    font-weight: normal;
+    color: #EDEBDD;
+}
+
+
+/* =========================
+   EXPECTED QUESTIONS
+========================= */
+
+.expected-section {
+    background: #630000;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+#expectedResults {
+    display: grid;
+    gap: 12px;
+}
+
+.expected-card {
+    background: #EDEBDD;
+    color: #1B1717;
+    border: 2px solid #810100;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.expected-card h3 {
+    color: #630000;
+    font-family: "Bitcount Grid Double", cursive;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.expected-card p {
+    color: #1B1717;
+}
+
+
+/* =========================
+   PRACTICE QUESTIONS
+========================= */
+
+.practice-section {
+    background: #630000;
+    box-shadow: 6px 6px 0 #1B1717;
+}
+
+#practiceResults {
+    display: grid;
+    gap: 12px;
+}
+
+.practice-card {
+    background: #810100;
+    color: #EDEBDD;
+    border-left: 7px solid #EDEBDD;
+    border-top: 2px solid #EDEBDD;
+    border-right: 2px solid #EDEBDD;
+    border-bottom: 2px solid #EDEBDD;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.practice-card h3 {
+    color: #EDEBDD;
+    font-family: "Bitcount Grid Double", cursive;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.practice-card p {
+    color: #EDEBDD;
+}
+
+
+/* =========================
+   EMPTY STATES
+========================= */
+
+#topicResults > p,
+#recommendationResults > p,
+#expectedResults > p,
+#practiceResults > p {
+    padding: 15px;
+    background: #EDEBDD;
+    color: #1B1717;
+    border: 2px dashed #810100;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.brand {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #630000;
+}

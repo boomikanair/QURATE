@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Question Paper Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="brand">QURATE</div>
+    <div class="container">
+
+        <header>
+            <h1>Question Paper Analyzer</h1>
+            <p>Upload Previous Year Question Papers and discover important topics</p>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <h2>Upload Question Papers</h2>
+
+            <p>
+                Upload one or more PYQs in PDF format.
+            </p>
+
+            <input
+                type="file"
+                id="pdfInput"
+                accept=".pdf,application/pdf"
+                multiple
+            >
+
+            <button id="analyzeBtn" type="button">
+                Analyze
+            </button>
+
+        </section>
+
+
+        <!-- Subject Section -->
+        <section id="subjectSection" class="subject-section">
+
+            <h2>Detected Subject</h2>
+
+            <div id="detectedSubject">
+                Upload papers to identify the subject.
+            </div>
+
+        </section>
+
+
+        <!-- High Weightage Topics -->
+        <section class="analysis-section">
+
+            <h2>High-Weightage Topics</h2>
+
+            <p class="section-description">
+                Topics identified by AI based on repetition, marks,
+                and semantic similarity across the papers.
+            </p>
+
+            <div id="topicResults">
+                <p>Upload to see analysis.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Recommendations -->
+        <section
+            id="recommendationsSection"
+            class="recommendations-section"
+        >
+
+            <h2>What to Study First</h2>
+
+            <div id="recommendationResults">
+                <p>Study recommendations will appear here.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Expected Questions -->
+        <section class="expected-section">
+
+            <h2>Expected Questions</h2>
+
+            <p class="section-description">
+                Questions that AI predicts may be important based on
+                previous-year question patterns and high-weightage topics.
+            </p>
+
+            <div id="expectedResults">
+                <p>Expected questions will appear here.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Practice Questions -->
+        <section class="practice-section">
+
+            <h2>Practice Questions</h2>
+
+            <p class="section-description">
+                Practice these questions to test your understanding
+                of the important topics.
+            </p>
+
+            <div id="practiceResults">
+                <p>Practice questions will appear here.</p>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
