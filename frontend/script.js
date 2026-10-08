@@ -41,7 +41,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc =
 // BACKEND URL
 // ==========================================
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://qurate-backend.onrender.com";
 
 
 // ==========================================
